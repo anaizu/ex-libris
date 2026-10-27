@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(241, 199, 171);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(20, 99, 20);
+    font-size: 48px;
+}
+
+h1, h2 {
+    font-family: "Merriweather", serif;
+}
+
+.estado {
+    background-color: white;
+}
+
+#quiero-leer {
+    color: blue;
+}
+
+#leyendo {
+    color: orange;
+}
+
+#leido {
+    color: green;
+}
+
+#abandonado {
+    color: red;
+}
