@@ -5,55 +5,72 @@
     <title>ExLibris</title>
   </head>
   <body>
-    <h1>ExLibris</h1>
-    <p>Mi registro de libros.</p>
+    <header>
+        <h1>ExLibris</h1>
+        <p>Mi registro de libros.</p>
+    </header>
 
-    <form>
-        <label for="titulo">Título</label>
-        <input id="titulo" name="titulo" type="text" placeholder="Ficciones" required>
-        <label for="autor">Autor</label>
-        <input id="autor" name="autor" type="text" placeholder="Jorge Luis Borges" required>
-        <label for="estado">Estado</label>
-        <select name="estado" id="estado">
-          <option value="quiero-leer">Quiero leer</option>
-          <option value="leyendo">Leyendo</option>
-          <option value="leido">Leído</option>
-          <option value="abandonado">Abandonado</option>
-        </select>
-        <input type="checkbox" name="biblioteca" id="biblioteca">
-        <label for="biblioteca">En mi biblioteca</label>
-        <input type="checkbox" name="kindle" id="kindle">
-        <label for="kindle">En mi Kindle</label>
-        <button type="submit">Agregar libro</button>
-    </form>
+    <main>
+        <form>
+            <label for="titulo">Título</label>
+            <input id="titulo" name="titulo" type="text" placeholder="Ficciones" required>
+            <label for="autor">Autor</label>
+            <input id="autor" name="autor" type="text" placeholder="Jorge Luis Borges" required>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+              <option value="quiero-leer">Quiero leer</option>
+              <option value="leyendo">Leyendo</option>
+              <option value="leido">Leído</option>
+              <option value="abandonado">Abandonado</option>
+            </select>
+            <input type="checkbox" name="biblioteca" id="biblioteca">
+            <label for="biblioteca">En mi biblioteca</label>
+            <input type="checkbox" name="kindle" id="kindle">
+            <label for="kindle">En mi Kindle</label>
+            <button type="submit">Agregar libro</button>
+        </form>
 
-    <h2>Quiero leer</h2>
-    <ul>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-    </ul>
+        <section id="quiero-leer">
+            <h2>Quiero leer</h2>
+            <ul>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+            </ul>
+        </section>
 
-    <h2>Leyendo</h2>
-    <ul>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-    </ul>
+        <section id="leyendo">
+            <h2>Leyendo</h2>
+            <ul>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+            </ul>
+        </section>
 
-    <h2>Leídos</h2>
-    <ul>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-    </ul>
+        <section id="leido">
+            <h2>Leídos</h2>
+            <ul>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+            </ul>
+        </section>
 
-    <h2>Abandonados</h2>
-    <ul>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-        <li>Título - Autor</li>
-    </ul>
-    
+        <section id="abandonado">
+            <h2>Abandonados</h2>
+            <ul>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+                <li>Título - Autor</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Hecho por Ana. 2026</p>
+    </footer>
+
   </body>
 </html>
