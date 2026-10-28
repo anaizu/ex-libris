@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(241, 199, 171);
     font-family: Arial, Helvetica, sans-serif;
@@ -14,6 +18,9 @@ h1, h2 {
 
 .estado {
     background-color: white;
+    padding: 20px;
+    border: 2px dashed rgb(20, 99, 20);
+    margin: 20px;
 }
 
 #quiero-leer {
@@ -30,4 +37,52 @@ h1, h2 {
 
 #abandonado {
     color: red;
+}
+
+.libro {
+    background-color: rgb(76, 173, 173);
+    padding: 20px;
+    border: 1px solid rgb(34, 78, 78);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.libro:hover{
+    border: 2px solid rgb(34, 78, 78);
+}
+
+.etiqueta {
+    background-color: rgb(180, 216, 123);
+    padding: 5px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.portada {
+    width: 60px;
+    height: 90px;
+    background-color: grey;
+}
+
+button {
+    background-color: rgb(233, 92, 92);
+    padding: 5px;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 999px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(241, 119, 119);
+    box-shadow: none;
+    color: rgb(61, 61, 61);
+    border: 2px solid grey;
+}
+
+input:focus, select:focus, button:focus {
+    outline: 2px solid rgb(41, 172, 41);
 }
