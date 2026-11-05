@@ -16,70 +16,92 @@
 
     <main>
         <form>
-            <label for="titulo">Título</label>
-            <input id="titulo" name="titulo" type="text" placeholder="Ficciones" required>
-            <label for="autor">Autor</label>
-            <input id="autor" name="autor" type="text" placeholder="Jorge Luis Borges" required>
-            <label for="estado">Estado</label>
-            <select name="estado" id="estado">
-              <option value="quiero-leer">Quiero leer</option>
-              <option value="leyendo">Leyendo</option>
-              <option value="leido">Leído</option>
-              <option value="abandonado">Abandonado</option>
-            </select>
-            <input type="checkbox" name="biblioteca" id="biblioteca">
-            <label for="biblioteca">En mi biblioteca</label>
-            <input type="checkbox" name="kindle" id="kindle">
-            <label for="kindle">En mi Kindle</label>
+            <div class="campo">
+                <label for="titulo">Título</label>
+                <input id="titulo" name="titulo" type="text" placeholder="Ficciones" required>
+            </div>
+            <div class="campo">
+                <label for="autor">Autor</label>
+                <input id="autor" name="autor" type="text" placeholder="Jorge Luis Borges" required>
+            </div>
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="quiero-leer">Quiero leer</option>
+                    <option value="leyendo">Leyendo</option>
+                    <option value="leido">Leído</option>
+                    <option value="abandonado">Abandonado</option>
+                </select>
+            </div>
+            <div class="campo checkbox">
+                <input type="checkbox" name="biblioteca" id="biblioteca">
+                <label for="biblioteca">En mi biblioteca</label>
+            </div>
+            <div class="campo checkbox">
+                <input type="checkbox" name="kindle" id="kindle">
+                <label for="kindle">En mi Kindle</label>
+            </div>  
             <button type="submit">Agregar libro</button>
         </form>
 
-        <section id="quiero-leer" class="estado">
-            <h2>Quiero leer</h2>
-            <article class="libro">
-                <div class="portada"></div>
-                <h3>The seven husbands of Evelyn Hugo</h3>
-                <p>Taylor Jenkins Reid</p>
-                <span class="etiqueta">En mi Kindle</span>
-            </article>
-            <article class="libro">
-                <div class="portada"></div>
-                <h3>El proceso</h3>
-                <p>Franz Kafka</p>
-                <span class="etiqueta">En mi Kindle</span>
-            </article>
-        </section>
+        <div class="estantes">
+            <section id="quiero-leer" class="estado">
+                <h2>Quiero leer</h2>
+                <article class="libro">
+                    <div class="portada"></div>
+                    <div class="datos">
+                        <h3>The seven husbands of Evelyn Hugo</h3>
+                        <p>Taylor Jenkins Reid</p>
+                        <span class="etiqueta">En mi Kindle</span>
+                    </div>
+                </article>
+                <article class="libro">
+                    <div class="portada"></div>
+                    <div class="datos">
+                        <h3>El proceso</h3>
+                        <p>Franz Kafka</p>
+                        <span class="etiqueta">En mi Kindle</span>
+                    </div>
+                </article>
+            </section>
 
-        <section id="leyendo" class="estado">
-            <h2>Leyendo</h2>
-            <article class="libro">
-                <div class="portada"></div>
-                <h3>Los árboles caídos también son el bosque</h3>
-                <p>Alejandra Kamiya</p>
-                <span class="etiqueta">En mi biblioteca</span>
-            </article>
-        </section>
+            <section id="leyendo" class="estado">
+                <h2>Leyendo</h2>
+                <article class="libro">
+                    <div class="portada"></div>
+                    <div class="datos">
+                        <h3>Los árboles caídos también son el bosque</h3>
+                        <p>Alejandra Kamiya</p>
+                        <span class="etiqueta">En mi biblioteca</span>
+                    </div>
+                </article>
+            </section>
 
-        <section id="leido" class="estado">
-            <h2>Leídos</h2>
-            <article class="libro">
-                <div class="portada"></div>
-                <h3>Ensayo sobre la ceguera</h3>
-                <p>José Saramago</p>
-                <span class="etiqueta">En mi biblioteca</span>
-            </article>
-        </section>
+            <section id="leido" class="estado">
+                <h2>Leídos</h2>
+                <article class="libro">
+                    <div class="portada"></div>
+                    <div class="datos">
+                        <h3>Ensayo sobre la ceguera</h3>
+                        <p>José Saramago</p>
+                        <span class="etiqueta">En mi biblioteca</span>
+                    </div>
+                </article>
+            </section>
 
-        <section id="abandonado" class="estado">
-            <h2>Abandonados</h2>
-            <article class="libro">
-                <div class="portada"></div>
-                <h3>Ficciones</h3>
-                <p>Jorge Luis Borges</p>
-                <span class="etiqueta">En mi Kindle</span>
-                <span class="etiqueta">En mi biblioteca</span>
-            </article>
-        </section>
+            <section id="abandonado" class="estado">
+                <h2>Abandonados</h2>
+                <article class="libro">
+                    <div class="portada"></div>
+                    <div class="datos">
+                        <h3>Ficciones</h3>
+                        <p>Jorge Luis Borges</p>
+                        <span class="etiqueta">En mi Kindle</span>
+                        <span class="etiqueta">En mi biblioteca</span>
+                    </div>
+                </article>
+            </section>
+        </div>
 
     </main>
 
